@@ -55,6 +55,7 @@ table {
 html {
   width: 100vw;
   overflow: hidden;
+  font-size: 62.5%;
 }
 
 .footer {
