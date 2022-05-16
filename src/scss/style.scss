@@ -1,0 +1,15 @@
+@import "variables";
+@import "mixin";
+
+@import "reset";
+
+html {
+    width: 100vw;
+    overflow: hidden;
+}
+
+.footer {
+    background-color: $black;
+    width: 100vw;
+    height: 393px;
+}
