@@ -1,0 +1,23 @@
+@import "../../../src/scss/global/abstracts/fonts";
+@import "../../../src/scss/global/abstracts/variables";
+@import "../../../src/scss/global/abstracts/mixin";
+
+@import "../../../src/scss/global/header";
+@import "map-section";
+@import "../../../src/scss/global/footer";
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $jost;
+}

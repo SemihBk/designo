@@ -1,0 +1,32 @@
+@import "../../../src/scss/global/abstracts/fonts";
+@import "../../../src/scss/global/abstracts/variables";
+@import "../../../src/scss/global/abstracts/mixin";
+
+/* INDEX */
+@import "../../../src/scss/global/header";
+@import "header-box";
+@import "gallery";
+@import "argument";
+@import "../../../src/scss/global/footer";
+
+/* RESET */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* STYLE */
+
+html {
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    font-size: 62.5%;
+    font-family: $jost;
+}
+
+a {
+    text-decoration: none;
+}

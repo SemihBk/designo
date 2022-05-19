@@ -1,0 +1,66 @@
+ /**********/
+  /* HEADER */
+  /**********/
+
+  .header {
+    margin-bottom: 16rem;
+
+    .img-hero-box {
+      width: 111.1rem;
+      margin: auto;
+      position: relative;
+
+      .img-hero {
+        width: 111.1rem;
+        margin: auto;
+        border-radius: 15px;
+      }
+
+      .hero-text-box {
+        position: absolute;
+        max-width: 54rem;
+        height: 16.5rem;
+
+        top: 145px;
+        left: 95px;
+        @include head1;
+        color: #fff;
+        margin-bottom: 2.2rem;
+
+        .heading-primary {
+          @include head1;
+          margin-bottom: 2rem;
+        }
+
+        .hero-description {
+          @include body;
+          color: #fff;
+          margin-bottom: 4rem;
+          max-width: 44.5rem;
+        }
+
+        .btn:link,
+        .btn:visited,
+        .btn:active {
+          display: inline-block;
+          font-size: 1.5rem;
+          font-weight: 500;
+          line-height: 2.168rem;
+          letter-spacing: 1px;
+          padding: 1.8rem 2.5rem;
+          background-color: $white;
+          border-radius: 8px;
+          text-decoration: none;
+          color: #333136;
+          text-transform: uppercase;
+
+          transition: all 0.3s;
+
+          &:hover {
+            color: $white;
+            background-color: #ffad9b;
+          }
+        }
+      }
+    }
+  }

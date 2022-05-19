@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.landpage__about {
+  margin: 16rem auto;
+  background: url(../img/background.png);
+  border-radius: 1.5rem;
+  border-left: 0px;
+  width: 111.1rem;
+  height: 48rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.landpage__about__us {
+  border-radius: 1.5rem;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+}
+
+.land__about__tittle {
+  padding-top: 13.6rem;
+  padding-left: 9.5rem;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 4.8rem;
+  line-height: 4.8rem;
+  color: rgb(255, 255, 255);
+}
+
+.landpage__about__founded {
+  margin: 3.2rem 9.5rem;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: rgb(255, 255, 255);
+}
+
+.landpage__about__second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 16rem auto;
+  background: url(../img/Group.png);
+  width: 111.1rem;
+  height: 64rem;
+  left: 16.5rem;
+  top: 79.5rem;
+}
+.landpage__about__second .landpage__about__talent {
+  border-top-left-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+}
+.landpage__about__second .landpage__about__tittle__two {
+  padding-top: 15.4rem;
+  padding-left: 95px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 4.8rem;
+  line-height: 4.8rem;
+  color: rgb(231, 129, 107);
+}
+.landpage__about__second .landpage__about__crew {
+  margin: 9rem 9rem;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: rgb(51, 49, 54);
+}
+
+.landpage__about__third {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 3rem;
+}
+.landpage__about__third .landpage__about__location {
+  justify-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 35rem;
+}
+.landpage__about__third .landpage__about__location .landpage_about__logo {
+  margin-bottom: 4rem;
+}
+.landpage__about__third .landpage__about__location .landpage__about__pais {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.5rem;
+  text-align: center;
+  letter-spacing: 0.5rem;
+  margin-bottom: 3.2rem;
+}
+.landpage__about__third .landpage__about__location .landpage__about__location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  letter-spacing: 0.1rem;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  color: rgb(255, 255, 255);
+  background: rgb(231, 129, 107);
+  border-radius: 0.8rem;
+  width: 15.2rem;
+  height: 5.4rem;
+  padding: 0.4rem;
+}
+.landpage__about__third .landpage__about__location .landpage__about__location:hover {
+  background-color: rgb(134, 75, 61);
+}
+
+.landpage__about__fourth {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 16rem auto;
+  background: url(../img/Group.png);
+  width: 111.1rem;
+  height: 64rem;
+  left: 16.5rem;
+  top: 79.5rem;
+}
+.landpage__about__fourth .landpage__about__textbehind__three {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: flex-end;
+          flex-direction: flex-end;
+}
+.landpage__about__fourth .landpage__about__textbehind__three .landpage__about__tittle__four {
+  padding-top: 15.4rem;
+  padding-left: 9.5rem;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 4.8rem;
+  line-height: 4.8rem;
+  color: rgb(231, 129, 107);
+}
+.landpage__about__fourth .landpage__about__textbehind__three .landpage__about__partners {
+  margin: 9rem 9rem;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: rgb(51, 49, 54);
+}
+.landpage__about__fourth .landpage__about__textbehind__three .landpage__about__partners__two {
+  margin-bottom: auto;
+  margin: -5rem 9rem;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: rgb(51, 49, 54);
+}
+
+.landpage__about__image__four {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.landpage__about__image__four .landpage__about__deal {
+  border: top right radius 1.5rem;
+  border: bottom right radius 1.5rem;
+  width: 47.6rem;
+}/*# sourceMappingURL=landpage.css.map */

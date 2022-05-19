@@ -1,67 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/src/css/style.min.css">
-    <title>Designo</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="src/css/index-style.min.css" />
+  <title>Designo</title>
 </head>
+
 <body>
-    <header class="header">
-        <nav class="main-nav">
-            <img src="src/img/logo_header.png" alt="Logo Designo">
-            <ul class="main-nav-list">
-                <li><a class="main-nav-link" href="">Our company</a></li>
-                <li><a href="">Locations</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
+  <!-- NAVIGATION -->
+  <nav class="main-nav">
+    <a href=""><img class="logo-header" src="src/img/global/logo_header.png" alt="Logo Designo" /></a>
+
+    <ul class="main-nav-list">
+      <li><a class="main-nav-link" href="about-us.html">Our company</a></li>
+      <li><a class="main-nav-link" href="locations.html">Locations</a></li>
+      <li><a class="main-nav-link" href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="img-hero-box">
+      <img class="img-hero" src="index/src/img/header.png" alt="image of a phone" />
+
+      <div class="hero-text-box">
+        <h1 class="heading-primary">
+          Award-winning custom designs and digital branding solutions
+        </h1>
+        <p class="hero-description">
+          With over 10 years in the industry, we are experienced in creating
+          fully responsive websites, app design, and engaging brand
+          experiences. Find out more about our services.
+        </p>
+        <a class="btn" href="">Learn more</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- SECTION GALLERY -->
+  <section class="section-gallery">
+    <article class="container">
+      <aside class="img-box img-box-one">
+        <a class="img-link" href="web-design.html">
+          <div class="maskin"></div>
+          <img src="index/src/img/web-design.png" alt="Web Design Photo">
+          <div class="img-text-box">
+            <h1 class="img-link-title">Web Design</h1>
+            <p class="img-link-text">View projects <img class="arrow-right" src="index/src/img/arrow.svg" alt="arrow">
+            </p>
+          </div>
+        </a>
+      </aside>
+
+      <aside class="img-box">
+        <a class="img-link" href="app-design.html">
+          <div class="maskin"></div>
+          <img src="index/src/img/app-design.jpg" alt="Web Design Photo">
+          <div class="img-text-box">
+            <h1 class="img-link-title">App Design</h1>
+            <p class="img-link-text">View projects <img class="arrow-right" src="index/src/img/arrow.svg" alt="arrow">
+            </p>
+          </div>
+        </a>
+      </aside>
+
+      <aside class="img-box">
+        <a class="img-link" href="">
+          <div class="maskin"></div>
+          <img src="index/src/img/graphic design.jpg" alt="Web Design Photo">
+          <div class="img-text-box">
+            <h1 class="img-link-title">Graphic Design</h1>
+            <p class="img-link-text">View projects
+              <img class="arrow-right" src="index/src/img/arrow.svg" alt="arrow">
+            </p>
+          </div>
+        </a>
+      </aside>
+    </article>
+  </section>
+
+  <!-- SECTION ARGUMENT -->
+  <section class="argument">
+    <div class="argument__one">
+      <figure><img class="argument__image" src="index/src/img/passionate.svg"></figure>
+      <h4 class="argument__title">Passionate</h4>
+      <p class="argument__text">
+        Each project starts with an in-depth brand research to ensure
+        we only create products that serve a purpose. We merge art, design,
+        and technology into exciting new solutions.
+      </p>
+    </div>
+    <div class="argument__two">
+      <figure><img class="argument__image" src="index/src/img/resourceful.svg"></figure>
+      <h4 class="argument__title">Resourceful</h4>
+      <p class="argument__text">
+        Everything that we do has a strategic purpose.
+        We use an agile approach in all of our projects and value
+        customer collaboration. It guarantees superior results that
+        fulfill our clients’ needs.
+      </p>
+    </div>
+    <div class="argument__three">
+      <figure><img class="argument__image" src="index/src/img/friendly.svg"></figure>
+      <h4 class="argument__title">Friendly</h4>
+      <p class="argument__text">
+        We are a group of enthusiastic folks who know how to put people first.
+        Our success depends on our customers, and we strive to give them the best
+        experience a company can provide.
+      </p>
+    </div>
+    <figure><img class="argument__bg-shape" src="index/src/img/shape.svg" alt="background shapes"></figure>
+  </section>
+
+  <!-- SECTION FOOTER -->
+
+  <footer class="main-footer footer">
+    <section class="footer__block block">
+      <div class="block__textarea">
+        <h4 class="block__title">Let's talk about your project</h4>
+        <p class="block__text">Ready to take it to the next level? Contact us today and find out how our
+          expertise can help your business grow.</p>
+      </div>
+      <div class="block__buttonarea">
+        <button class="block__button">Get in touch</button>
+      </div>
+    </section>
+    <section class="footer__footer">
+      <div class="footer__links">
+        <a href="index.html">
+          <figure><img class="footer__logo" src="src/img/global/logo_footer.png" alt="Logo of designo">
+          </figure>
+        </a>
+        <nav class="footer__nav nav">
+          <ul class="nav__list">
+            <li class="nav__items"><a class="nav__links" href="about-us.html">Our company</a></li>
+            <li class="nav__items"><a class="nav__links" href="locations.html">Locations</a></li>
+            <li class="nav__items"><a class="nav__links" href="contact.html">Contact</a></li>
+          </ul>
         </nav>
-        
-    </header>
-
-    <section></section>
-    <section></section>
-
-    <footer class="main-footer footer">
-        <div class="footer__links">
-            <figure><img class="footer__logo" src="/src/img/logo_footer.png" alt="Logo of designo"></figure>
-            <nav class="footer__nav nav">
-                <ul class="nav__list">
-                    <li class="nav__items"><a class="nav__links" href="#">Our company</a></li>
-                    <li class="nav__items"><a class="nav__links" href="#">Locations</a></li>
-                    <li class="nav__items"><a class="nav__links" href="#">Contact</a></li>
-                </ul>
-            </nav>
+      </div>
+      <div class="footer__line"></div>
+      <section class="footer__info info">
+        <div class="info__adress adress">
+          <p class="adress__bold bold">Designo Central Office</p>
+          <p class="adress__name">
+            386 Wellington Street <br>
+            1000 Brussels - Belgium
+          </p>
         </div>
-        <div class="footer__line"></div>
-        <div class="footer__info info">
-            <div class="info__adress adress">
-                <p class="adress__bold">Designo Central Office</p>
-                <p class="adress__name"> 
-                    386 Wellington Street
-                    1000 Brussels - Belgium
-                </p>
-            </div>
-            <div class="info__contact contact">
-                <p class="contact__bold"> 
-                    Contact Us (Central Office)
-                    P : +1 253-863-8967
-                    M : contact@designo.co
-                </p>
-            </div>
+        <div class="info__contact contact">
+          <p class="contact__bold">
+            Contact Us (Central Office) <br>
+            P : <a class="contact__link" href="tel: +1253-863-8967">+1 253-863-8967</a><br>
+            M : <a class="contact__link" href="mailto: ">contact@designo.co</a>
+          </p>
         </div>
-        <div class="footer_social">
-            <nav class="social__nav nav"></nav>
-                <ul class="nav_list">
-                   
-                </ul>
-            
-            
-        </div> 
-
-
-
-    </footer>
+      </section>
+      <section class="footer__social">
+        <nav class="footer__social social">
+          <ul class="social__list">
+            <li class="social__items"><a class="social__links" href="#"><img class="social__image"
+                  src="src/img/global/icon/facebook.svg"></a></li>
+            <li class="social__items"><a class="social__links" href="#"><img class="social__image"
+                  src="src/img/global/icon/youtube.svg"></a></li>
+            <li class="social__items"><a class="social__links" href="#"><img class="social__image"
+                  src="src/img/global/icon/twitter.svg"></a></li>
+            <li class="social__items"><a class="social__links" href="#"><img class="social__image"
+                  src="src/img/global/icon/printerest.svg"></a></li>
+            <li class="social__items"><a class="social__links" href="#"><img class="social__image"
+                  src="src/img/global/icon/instagram.svg"></a></li>
+          </ul>
+        </nav>
+      </section>
+    </section>
+    </div>
+  </footer>
 </body>
+
 </html>

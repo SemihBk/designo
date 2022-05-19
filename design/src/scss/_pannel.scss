@@ -1,0 +1,91 @@
+.design__pannel {
+    width: 111rem;
+    margin: 0 auto;
+    margin-top: 16rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 3rem;
+    grid-row-gap: 3.2rem;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+        "pannel-one pannel-two pannel-three"
+        "pannel-four pannel-five pannel-six";
+}
+
+.pannel-one {
+    grid-area: pannel-one;
+}
+
+.pannel-two {
+    grid-area: pannel-two;
+}
+
+.pannel-three {
+    grid-area: pannel-three;
+}
+
+.pannel-four {
+    grid-area: pannel-four;
+}
+
+.pannel-five {
+    grid-area: pannel-five;
+}
+
+.pannel-six {
+    grid-area: pannel-six;
+}
+
+.pannel {
+    width: 35rem;
+    height: 47.8rem;
+
+    &__image {
+        width: 35rem;
+
+        &__background {
+            border-radius: 25px 25px 0px 0px;
+            object-fit: cover;
+        }
+    }
+
+    &__textarea {
+        background: $light-peach-opacity;
+        border-radius: 0px 0px 25px 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &:hover {
+            background: $peach;
+
+            #title, #text {
+                color: white;
+            }
+        }
+
+        &__title {
+            font-family: $jost;
+            font-weight: 500;
+            font-size: 2rem;
+            line-height: 2.6rem;
+            text-align: center;
+            letter-spacing: 0.5rem;
+            color: $peach;
+            margin-bottom: 1.6rem;
+            padding-top: 2rem;
+            text-transform: uppercase;
+        }
+
+        &__text {
+            font-family: $jost;
+            font-weight: 400;
+            font-size: 1.6rem;
+            line-height: 2.6rem;
+            text-align: center;
+            color: $black;
+            padding-bottom: 3.2rem;
+            max-width: 26rem;
+        }
+    }
+}

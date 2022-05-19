@@ -1,0 +1,38 @@
+.design__block__header {
+    width: 111.1rem;
+    height: 25.2rem;
+    margin: 0 auto;
+
+    &__image {
+        background-image: url("../../../design/src/img/header_block.png");
+        background-size: cover;
+        width: 111.1rem;
+        min-height: 25.2rem;
+    }
+
+    &__textarea {
+        height: 25.2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 6.4rem;
+        
+        &__title {
+            font-family: $jost;
+            font-weight: 500;
+            font-size: 4.8rem;
+            text-align: center;
+            color: $white;
+        }
+
+        &__text {
+            font-family: $jost;
+            font-weight: 400;
+            font-size: 1.6rem;
+            line-height: 2.6rem;
+            text-align: center;
+            color: $white;
+            max-width: 41rem;
+        }
+    }
+}

@@ -1,0 +1,161 @@
+/* FOOTER */
+.footer {
+    width: 100vw;
+
+    .block { /* Block juste au dessus du header */
+        position: relative;
+        z-index: 1;
+        background-image: url("../../src/img/global/footer.png");
+        background-position: center;
+        background-size: cover;
+        max-width: 111.1rem;
+        height: 29.2rem;
+        margin: 0 auto;
+        border-radius: 25px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        &__textarea {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 2rem;
+            margin-left: 9.5rem;
+            margin-right: 30.9rem;
+        }
+
+        &__title {
+            max-width: 26.8rem;
+            font-weight: 500;
+            font-size: 4rem;
+            line-height: 4rem;
+            color: $white;
+        }
+
+        &__text {
+            width: 45.9rem;
+            max-height: 5.2rem;
+            font-weight: 400;
+            font-size: 1.6rem;
+            line-height: 2.6rem;
+            color: $white;
+        }
+
+        &__button {
+            @include button-style-white;
+        }
+
+    }
+
+    &__footer { /* Footer global */
+        position: absolute;
+        background-color: $black;
+        width: 100vw;
+        height: 39.3rem;
+        margin-top: -10.0rem;
+    }
+
+    &__links { /* Logo et navbar (Premiere section du footer) */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 101.1rem;
+        margin: 4.0rem 16.5rem;
+        padding-top: 14.4rem;
+    }
+
+    &__logo {
+        width: 15.7rem;
+    }
+
+    &__line {
+        border-top: 1px solid $white;
+        opacity: 0.1;
+        width: 75rem;
+        margin: 0 auto;
+        margin-bottom: 3.1rem;
+    }
+
+    .nav {
+        
+        &__list {
+            display: flex;
+            flex-direction: row;
+            gap: 4.2rem;
+            list-style: none;
+        }
+
+        &__links {
+            color: $white;
+            font-size: 1.4rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-decoration-line: none;
+
+            &:hover {
+                text-decoration-line: underline;
+                text-decoration-color: rgba(255, 255, 255, 0.2);
+            }
+        }
+    }
+
+    .info { /* Adresse, contact, ... (2 ème section du footer) */
+        display: flex;
+        flex-direction: row;
+        gap: 12rem;
+        max-width: 101.1rem;
+        margin: 0px 16.5rem;
+
+        &__adress {
+            color: $white;
+            opacity: 0.5;
+            font-size: 1.6rem;
+            line-height: 2.6rem;
+            max-width: 35rem;
+
+            .bold {
+                font-weight: 700;
+            }
+        }
+
+        &__contact {
+            color: $white;
+            opacity: 0.5;
+            font-size: 1.6rem;
+            line-height: 2.6rem;
+            font-weight: 700;
+            max-width: 35rem;
+        }
+    }
+
+    .contact {
+
+        &__link {
+           text-decoration: none;
+           color: $white
+        }
+    }
+
+    .social { /* Liens des réseaux sociaux (3ème section du footer) */
+        
+        &__list {
+            display: flex;
+            flex-direction: row;
+            gap: 1.6rem;
+            justify-content: flex-end;
+            margin: 0px 11.6rem 7.2rem 0px;
+            position: relative;
+            bottom: 4.2rem;
+            list-style: none;
+        }
+        
+
+        &__links {
+            &:hover {
+                filter: brightness(0) saturate(100%) invert(69%) sepia(67%) saturate(338%) hue-rotate(318deg) brightness(100%) contrast(102%);                
+            }
+        }
+
+    }
+}
