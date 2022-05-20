@@ -1,0 +1,83 @@
+@import "../../../src/scss/global/abstracts/fonts";
+@import "../../../src/scss/global/abstracts/variables";
+@import "../../../src/scss/global/abstracts/mixin";
+
+/* INDEX */
+@import "../../../src/scss/global/header";
+@import "../../../src/scss/global/footer";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $jost;
+}
+.error-box {
+  position: relative;
+}
+
+.all-displayed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  gap: 3rem;
+
+  .logo-header {
+    margin-top: 2rem;
+  }
+
+  .text-box {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+
+    .st-title-text-box {
+      font-size: 5rem;
+      color: #fff;
+      margin-bottom: 3rem;
+      text-transform: uppercase;
+    }
+
+    .nd-title-text-box {
+      font-size: 3.6rem;
+      color: #fff;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 2rem;
+      color: #e9ecef;
+      width: 55rem;
+      line-height: 1.5;
+      margin-bottom: 2rem;
+    }
+
+    .btn-back:link,
+    .btn-back:active,
+    .btn-back:visited {
+      display: inline-block;
+      padding: 2rem;
+      background-color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 2rem;
+      text-transform: uppercase;
+      border-radius: 15px;
+      color: #333136;
+      transition: all 0.3s;
+
+      &:hover {
+        background-color: #ffad9b;
+        color: #fff;
+      }
+    }
+  }
+}
