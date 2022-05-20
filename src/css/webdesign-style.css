@@ -77,7 +77,7 @@
   margin: 0 auto;
 }
 .design__block__header__image {
-  background-image: url("../../../design/src/img/header_block.png");
+  background-image: url("../../design/src/img/header_block.png");
   background-size: cover;
   width: 111.1rem;
   min-height: 25.2rem;

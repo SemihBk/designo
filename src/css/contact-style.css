@@ -83,7 +83,7 @@ input[type=number]::-webkit-outer-spin-button {
   width: 111rem;
   height: 48rem;
   margin: 0 auto;
-  background-image: url("../../../contact/src/img/background.png");
+  background-image: url("../../contact/src/img/background.png");
   background-size: 100%;
   background-repeat: no-repeat;
   display: -webkit-box;
