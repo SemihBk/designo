@@ -8,6 +8,10 @@
         background-size: cover;
         width: 111.1rem;
         min-height: 25.2rem;
+
+        @include first {
+            margin: 0 5rem;
+           }
     }
 
     &__textarea {

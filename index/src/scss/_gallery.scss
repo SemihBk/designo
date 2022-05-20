@@ -2,12 +2,12 @@
 /* SECTION GALLERY */
 /*******************/
 
-html {
-  font-size: 62.5%;
-}
-
 .section-gallery {
   margin-bottom: 16rem;
+  
+  @include first {
+    margin: 0 5rem 16rem;
+   }
 }
 
 .maskin {
@@ -25,7 +25,7 @@ html {
 }
 
 .container {
-  width: 111.2rem;
+  max-width: 111.2rem;
   margin: auto;
 
   display: grid;
@@ -35,21 +35,37 @@ html {
   row-gap: 2.4rem;
   align-items: center;
 
+  @include tablet {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 100%;
+   
+  }
+
   .img-box-one {
     grid-row: 1 / 3;
-    width: 54.1rem;
-    height: 64rem;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
     border-radius: 25px;
+
+    @include tablet {
+      grid-row: 1 / 2;
+      height: 20rem;
+    }
   }
 }
 
 .img-box {
   position: relative;
-  width: 54.1rem;
-  height: 30.8rem;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
   border-radius: 25px;
+  
+  @include tablet {
+    height: 20rem;
+  }
 
   .img-link:link,
   .img-link:active,

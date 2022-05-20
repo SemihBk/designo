@@ -6,12 +6,21 @@
     flex-direction: row;
     justify-content: center;
     gap: 3rem;
+    
+    @include first {
+        margin: 0 5rem 16rem;
+       }
+
+    &__one, &__two, &__three {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
    &__image {
        position: relative;
        z-index: 1;
-       width: 20.2rem;
-       margin: 0px 0px 4.8rem 7rem;
+       width: 100%;
    }
 
    &__title {

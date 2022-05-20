@@ -15,7 +15,7 @@
        background: $white-opacity;
        color: $white;
        cursor: pointer;
-    }  
+    }
 }
 
 @mixin button-style-red {
@@ -121,3 +121,23 @@
     color: #333136;
   }
   
+
+/* MEDIA QUERIES */
+
+@mixin first {
+  @media screen and (max-width: #{$first-breakpoint}) {
+    @content;
+  }
+}
+
+@mixin second {
+  @media screen and (max-width: #{$second-breakpoint}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (max-width: #{$tablet-breakpoint}) {
+    @content;
+  }
+}
