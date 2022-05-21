@@ -6,22 +6,43 @@
     flex-direction: row;
     justify-content: center;
     gap: 3rem;
+    margin-bottom: 16rem;
     
     @include first {
         margin: 0 5rem 16rem;
-       }
+    }
+
+    @include tablet {
+        flex-direction: column;
+        margin: 0 3.9rem 12rem;
+   }
 
     &__one, &__two, &__three {
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        @include tablet {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        @include fifth {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
    &__image {
        position: relative;
        z-index: 1;
        width: 100%;
+
+       @include fifth {
+           margin-bottom: 4.8rem;
+       }
    }
+
 
    &__title {
        position: relative;
@@ -31,7 +52,15 @@
        text-align: center;
        color: $dark-grey;
        margin-bottom: 3.2rem;
+       text-transform: uppercase;
 
+        @include tablet {
+            text-align: left;
+        }
+
+        @include fifth {
+            text-align: center;
+        }
    }
 
    &__text {
@@ -43,7 +72,14 @@
        font-size: 1.6rem;
        line-height: 2.6rem;
        color: $dark-grey;
-       margin-bottom: 16rem;
+
+       @include tablet {
+           text-align: left;
+       }
+
+       @include fifth {
+           text-align: center;
+       }
    }
 
    &__bg-shape {
@@ -56,4 +92,9 @@
        opacity: 0.5;
        mix-blend-mode: normal;
    }
+}
+
+.flex-cln {
+    display: flex;
+    flex-direction: column;
 }

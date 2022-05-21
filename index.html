@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="././src/css/index-style.min.css">
   <title>Designo</title>
+
+  
 </head>
 
 <body>
@@ -19,6 +21,12 @@
       <li><a class="main-nav-link" href="locations.html">Locations</a></li>
       <li><a class="main-nav-link" href="contact.html">Contact</a></li>
     </ul>
+
+    <div class="hamburger hb-hidden">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
   </nav>
 
   <!-- HEADER -->
@@ -41,31 +49,7 @@
     </div>
   </header>
 
-<!-- ***************** -->
-<!-- ***************** -->
-<!-- ***************** -->
-<!-- ***************** -->
-  <!-- A VOIR APRES -->
- <!--  <header class="header">
-    <div class="hero-container">
-      <div class="hero-text-box">
-        <div class="hero-text-wrap">
-          <h1 class="heading-primary">
-            Award-winning custom designs and digital branding solutions
-          </h1>
-          <p class="hero-description">
-            With over 10 years in the industry, we are experienced in creating
-            fully responsive websites, app design, and engaging brand
-            experiences. Find out more about our services.
-          </p>
-          <a class="btn" href="">Learn more</a>
-        </div>
-      </div>
-      <div class="hero-img-box">
-        <img class="phone-img" src="index/src/img/phone.png" alt="Image of a phone FRAME">
-      </div>
-    </div>
-  </header> -->
+
   
   <main>
     <!-- SECTION GALLERY -->
@@ -74,7 +58,7 @@
         <aside class="img-box img-box-one">
           <a class="img-link" href="web-design.html">
             <div class="maskin"></div>
-            <img src="index/src/img/web-design.png" alt="Web Design Photo">
+            <img class="img-width" src="index/src/img/web-design.png" alt="Web Design Photo">
             <div class="img-text-box">
               <h1 class="img-link-title">Web Design</h1>
               <p class="img-link-text">View projects <img class="arrow-right" src="index/src/img/arrow.svg" alt="arrow">
@@ -86,7 +70,7 @@
         <aside class="img-box">
           <a class="img-link" href="app-design.html">
             <div class="maskin"></div>
-            <img src="index/src/img/app-design.jpg" alt="Web Design Photo">
+            <img class="img-width" src="index/src/img/app-design.jpg" alt="Web Design Photo">
             <div class="img-text-box">
               <h1 class="img-link-title">App Design</h1>
               <p class="img-link-text">View projects <img class="arrow-right" src="index/src/img/arrow.svg" alt="arrow">
@@ -98,7 +82,7 @@
         <aside class="img-box">
           <a class="img-link" href="">
             <div class="maskin"></div>
-            <img src="index/src/img/graphic design.jpg" alt="Web Design Photo">
+            <img class="img-width" src="index/src/img/graphic design.jpg" alt="Web Design Photo">
             <div class="img-text-box">
               <h1 class="img-link-title">Graphic Design</h1>
               <p class="img-link-text">View projects
@@ -114,31 +98,40 @@
     <section class="argument">
       <div class="argument__one">
         <figure><img class="argument__image" src="index/src/img/passionate.svg"></figure>
-        <h4 class="argument__title">Passionate</h4>
-        <p class="argument__text">
-          Each project starts with an in-depth brand research to ensure
-          we only create products that serve a purpose. We merge art, design,
-          and technology into exciting new solutions.
-        </p>
+        <div class="flex-cln">
+          <h4 class="argument__title">Passionate</h4>
+          <p class="argument__text">
+            Each project starts with an in-depth brand research to ensure
+            we only create products that serve a purpose. We merge art, design,
+            and technology into exciting new solutions.
+          </p>
+        </div>
+
       </div>
       <div class="argument__two">
         <figure><img class="argument__image" src="index/src/img/resourceful.svg"></figure>
-        <h4 class="argument__title">Resourceful</h4>
-        <p class="argument__text">
-          Everything that we do has a strategic purpose.
-          We use an agile approach in all of our projects and value
-          customer collaboration. It guarantees superior results that
-          fulfill our client's needs.
-        </p>
+        <div class="flex-cln">
+          <h4 class="argument__title">Resourceful</h4>
+          <p class="argument__text">
+            Everything that we do has a strategic purpose.
+            We use an agile approach in all of our projects and value
+            customer collaboration. It guarantees superior results that
+            fulfill our client's needs.
+          </p>
+        </div>
+        
       </div>
       <div class="argument__three">
         <figure><img class="argument__image" src="index/src/img/friendly.svg"></figure>
-        <h4 class="argument__title">Friendly</h4>
-        <p class="argument__text">
-          We are a group of enthusiastic folks who know how to put people first.
-          Our success depends on our customers, and we strive to give them the best
-          experience a company can provide.
-        </p>
+        <div class="flex-cln">
+          <h4 class="argument__title">Friendly</h4>
+          <p class="argument__text">
+            We are a group of enthusiastic folks who know how to put people first.
+            Our success depends on our customers, and we strive to give them the best
+            experience a company can provide.
+          </p>
+        </div>
+        
       </div>
       <!-- <figure><img class="argument__bg-shape" src="index/src/img/shape.svg" alt="background shapes"></figure> -->
     </section>
@@ -164,6 +157,8 @@
           <figure><img class="footer__logo" src="src/img/global/logo_footer.png" alt="Logo of designo">
           </figure>
         </a>
+
+        <div class="footer__line hidden"></div>
         <nav class="footer__nav nav">
           <ul class="nav__list">
             <li class="nav__items"><a class="nav__links" href="about-us.html">Our company</a></li>
@@ -208,6 +203,22 @@
     </section>
     </div>
   </footer>
+
+  <script>
+/*     let bgtoggle = document.querySelector(".hamburger");
+    bgtoggle.onclick = function () {
+      bgtoggle.classList.toggle("active");
+    }; */
+   
+    const hamburger = document.querySelector(".hamburger");
+    const mainNav = document.querySelector(".main-nav-list");
+
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("active");
+      mainNav.classList.toggle("active");
+    })
+
+  </script>
 </body>
 
 </html>

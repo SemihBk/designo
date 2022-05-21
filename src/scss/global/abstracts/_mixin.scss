@@ -141,3 +141,15 @@
     @content;
   }
 }
+
+@mixin fourth {
+  @media screen and (max-width: #{$nd-tablet-breakpoint}) {
+    @content;
+  }
+}
+
+@mixin fifth {
+  @media screen and (max-width: #{$rd-tablet-breakpoint}) {
+    @content;
+  }
+}

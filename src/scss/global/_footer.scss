@@ -19,6 +19,10 @@
             max-width: none;
            }
 
+        @include tablet {
+            height: 35rem;
+        }
+
         &__area {
             width: 111.1rem;
             display: flex;
@@ -56,7 +60,8 @@
             color: $white;
 
             @include tablet {
-                max-width: initial;
+                max-width: 33.5rem;
+                margin: auto;
             }
         }
 
@@ -81,6 +86,10 @@
         width: 100%;
         height: 39.3rem;
         margin-top: -10.0rem;
+
+        @include fourth {
+            height: initial;
+        }
     }
 
     &__links { /* Logo et navbar (Premiere section du footer) */
@@ -94,18 +103,36 @@
         @include tablet {
             margin: 4rem 4rem;
         }
+
+        @include fourth {
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+            
+            
+        
     }
 
     &__logo {
         width: 15.7rem;
+
+        @include fourth {
+            margin-bottom: 3.2rem;
+        }
     }
 
     &__line {
         border-top: 1px solid $white;
         opacity: 0.1;
-        width: 75rem;
+        width: 90%;
         margin: 0 auto;
         margin-bottom: 3.1rem;
+
+        @include fourth {
+            display: none;
+        }
     }
 
     .nav {
@@ -115,6 +142,13 @@
             flex-direction: row;
             gap: 4.2rem;
             list-style: none;
+
+            @include fourth {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 3.2rem;
+            }
         }
 
         &__links {
@@ -138,9 +172,19 @@
         max-width: 101.1rem;
         margin: 0 16.5rem;
 
+        @include second {
+            margin: 0 9.5rem;
+        }
+
         @include tablet {
             margin: 0 3.9rem;
             gap: 5rem
+        }
+
+        @include fourth {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
         }
 
         &__adress {
@@ -187,7 +231,18 @@
             list-style: none;
 
             @include second {
-                margin: 0px 4rem 7.2rem 2rem;
+                margin: 0 8rem 7.2rem 2rem;
+            }
+
+            @include tablet {
+                margin: 0 3.9rem 8rem 2rem;
+            }
+
+            @include fourth {
+                justify-content: center;
+                bottom: -5rem;
+                margin: 0 auto 6.4rem;
+                padding-bottom: 5rem;
             }
         }
         
@@ -198,5 +253,18 @@
             }
         }
 
+    }
+}
+
+.hidden {
+    border-top: 1px solid $white;
+    opacity: 0.1;
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 3.1rem;
+    display: none;
+
+    @include fourth {
+        display: block;
     }
 }
