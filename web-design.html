@@ -19,6 +19,12 @@
                 <li><a class="main-nav-link" href="locations.html">Locations</a></li>
                 <li><a class="main-nav-link" href="contact.html">Contact</a></li>
             </ul>
+
+            <div class="hamburger hb-hidden">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
         </nav>
     </header>
     <section class="design__block design__block__header">
@@ -191,6 +197,33 @@
     </section>
     </div>
   </footer>
+
+  <script>
+    /*     let bgtoggle = document.querySelector(".hamburger");
+        bgtoggle.onclick = function () {
+          bgtoggle.classList.toggle("active");
+        }; */
+       
+        const hamburger = document.querySelector(".hamburger");
+        const mainNav = document.querySelector(".main-nav-list");
+        const ul =  document.querySelector('ul');
+        var isActive = new Boolean(false);
+    
+        hamburger.addEventListener("click", () => {
+          if (isActive == true) {
+            hamburger.classList.toggle('active')
+            ul.classList.add('inactive');
+            ul.classList.remove('active');
+            isActive = false;
+          } else {
+            hamburger.classList.toggle('active')
+            ul.classList.add('active');
+            ul.classList.remove('inactive');
+            isActive = true;
+          }
+        })
+    
+      </script>
 </body>
 
 </html>
