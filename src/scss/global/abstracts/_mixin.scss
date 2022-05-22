@@ -153,3 +153,9 @@
     @content;
   }
 }
+
+@mixin sixth {
+  @media screen and (max-width: #{$fourth-tablet-breakpoint}) {
+    @content;
+  }
+}

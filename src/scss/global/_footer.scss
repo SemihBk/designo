@@ -23,6 +23,10 @@
             height: 35rem;
         }
 
+        @include sixth {
+            margin: 0 2.8rem 0;
+        }
+
         &__area {
             width: 111.1rem;
             display: flex;
@@ -72,6 +76,15 @@
             font-size: 1.6rem;
             line-height: 2.6rem;
             color: $white;
+
+            @include fifth {
+                width: 88%;
+                margin: 0 auto;
+            }
+
+            @include sixth {
+                margin-bottom: 2.4rem
+            }
         }
 
         &__button {

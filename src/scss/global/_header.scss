@@ -31,6 +31,9 @@ html {
       font-size: 59.5%;
     }
     
+    @include sixth {
+      font-size: 55%;
+    }
 }
 
 a {
