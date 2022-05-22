@@ -16,7 +16,7 @@
   <nav class="main-nav">
     <a href=""><img class="logo-header" src="src/img/global/logo_header.png" alt="Logo Designo" /></a>
 
-    <ul class="main-nav-list">
+    <ul class="main-nav-list inactive">
       <li><a class="main-nav-link" href="about-us.html">Our company</a></li>
       <li><a class="main-nav-link" href="locations.html">Locations</a></li>
       <li><a class="main-nav-link" href="contact.html">Contact</a></li>
@@ -214,10 +214,21 @@
    
     const hamburger = document.querySelector(".hamburger");
     const mainNav = document.querySelector(".main-nav-list");
+    const ul =  document.querySelector('ul');
+    var isActive = new Boolean(false);
 
     hamburger.addEventListener("click", () => {
-      hamburger.classList.toggle("active");
-      mainNav.classList.toggle("active");
+      if (isActive == true) {
+        hamburger.classList.toggle('active')
+        ul.classList.add('inactive');
+        ul.classList.remove('active');
+        isActive = false;
+      } else {
+        hamburger.classList.toggle('active')
+        ul.classList.add('active');
+        ul.classList.remove('inactive');
+        isActive = true;
+      }
     })
 
   </script>

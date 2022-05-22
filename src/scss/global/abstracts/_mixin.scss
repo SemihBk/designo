@@ -159,3 +159,9 @@
     @content;
   }
 }
+
+@mixin seventh {
+  @media screen and (max-width: #{$five-tablet-breakpoint}) {
+    @content;
+  }
+}
