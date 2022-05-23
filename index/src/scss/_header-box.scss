@@ -18,6 +18,12 @@
       margin: 0 2.8rem 8rem;
     }
 
+    @include fifth-loca {
+      margin: 0 0 8rem;
+      max-width: 100%;
+      border-radius: 0;
+    }
+
     .img-hero-box {
       max-width: 111.1rem;
       margin: auto;
@@ -31,6 +37,10 @@
 
         @include sixth {
           display: block;
+        }
+
+        @include fifth-loca {
+          border-radius: 0;
         }
       }
 

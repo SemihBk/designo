@@ -12,23 +12,84 @@ input[type=number]::-webkit-outer-spin-button {
     &__header {
         width: 111rem;
         height: 48rem;
-        margin: 0 auto ;
+        margin: 0 auto 16rem;
         background-image: url("../../contact/src/img/background.png");
         background-size: 100%;
         background-repeat: no-repeat;
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
+        border-radius: 15px;
+
+        @include first {
+            width: auto;
+            margin: 0 5rem;
+        }
+
+        @include st-cont {
+            background: url("../../contact/src/img/bg-mid.png");
+            background-size: 100%;
+            height: 75rem;
+
+            flex-direction: column;
+            align-items: center;
+            gap: 6rem;
+        }
+
+
+        @include nd-cont {
+            height: 67rem;
+        }
+
+        @include tablet {
+            height: 71.1rem;
+            background-size: auto;
+        }
+
+        @include fifth {
+            margin: 0 2.4rem;
+        }
+
+        @include rd-cont {
+            background: url("../../contact/src/img/bg-mobile.png");
+        }
+
+        @include fifth-loca {
+            margin: 0;
+            border-radius: 0;
+        }
 
         &__textarea {
             display: flex;
             flex-direction: column;
             gap: 3rem;
-            width: 445px;
-            height: 104px;
+            width: 44.5rem;
+            height: 10.4rem;
             margin-top: 10rem;
             margin-left: 9.5rem;
             margin-right: 9rem;
+
+            @include first {
+                margin-top: 6rem;
+                margin-left: 5.8rem;
+                margin-right: 4.5rem;
+            }
+
+            @include st-loca {
+                width: 38.5rem;
+            }
+
+            @include st-cont {
+                width: auto;
+            }
+
+            @include fifth {
+                width: 87%;
+            }
+
+            @include fifth-loca {
+                text-align: center;
+            }
 
             &__title {
                 font-family: $jost;
@@ -36,6 +97,10 @@ input[type=number]::-webkit-outer-spin-button {
                 font-weight: 500;
                 font-size: 4.8rem;
                 color: $white;
+
+                @include fifth-loca {
+                    font-size: 3.8rem;
+                }
             }
 
             &__text {
@@ -45,6 +110,10 @@ input[type=number]::-webkit-outer-spin-button {
                 font-size: 1.6rem;
                 line-height: 2.8rem;
                 color: $white;
+
+                @include fifth-loca {
+                    font-size: 1.5rem;
+                }
             }
         }
     }
@@ -53,6 +122,16 @@ input[type=number]::-webkit-outer-spin-button {
         width: 38rem;
         height: 37.1rem;
         margin-top: 3rem;
+
+        @include st-cont {
+            margin-top: 10rem;
+        }
+
+        @include st-cont {
+            width: 87%;
+        }
+
+
         &__form {
             display: flex;
             flex-direction: column;
@@ -76,18 +155,47 @@ input[type=number]::-webkit-outer-spin-button {
 
             &__submit {
                 @include button-style-white;
-                margin: 2.4rem 0px 0px 23rem;
+                margin: 2.4rem 0 0 23rem;
+
+                @include st-loca {
+                    margin-left: 18rem;
+                }
+
+                @include st-cont {
+                    margin: 2.4rem 0 0 23rem;
+                }
+
+                @include rd-cont {
+                    margin-left: 11rem;
+                }
+
+                @include fifth-loca {
+                    margin-left: 8rem;
+                }
+
+                
             }
         }
     }
 
     &__locations {
-        width: 100rem;
-        height: 36.4rem;
-        margin: 16rem auto;
+        max-width: 100rem;
+        margin: 0 auto 16rem;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+
+        @include st-loca {
+            margin: 16rem 6rem;
+            justify-content: center;
+            gap: 5.6rem;
+        }
+
+        @include st-cont {
+            flex-direction: column;
+            align-items: center;
+            gap: 8.6rem;
+        }
 
         &__section {
             display: flex;
@@ -96,7 +204,7 @@ input[type=number]::-webkit-outer-spin-button {
         }
 
         &__image {
-            width: 20.2rem;
+            width: 100%;
             margin-bottom: 4.8rem;
         }
 
