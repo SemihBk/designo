@@ -165,3 +165,17 @@
     @content;
   }
 }
+
+/* LOCATIONS BREAKPOINTS */
+
+@mixin st-loca {
+  @media screen and (max-width: #{$st-brk-locations}) {
+    @content;
+  }
+}
+
+@mixin nd-loca {
+  @media screen and (max-width: #{$nd-brk-locations}) {
+    @content;
+  }
+}

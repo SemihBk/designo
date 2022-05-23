@@ -3,20 +3,57 @@
 .section-map {
     margin-bottom: 16rem;
 
+    @include tablet {
+      margin-bottom: 12rem;
+    }
+
     .article-map {
-      width: 108rem;
-      margin: auto;
+      max-width: 108rem;
+      margin: 0 auto 3.2rem;
       display: flex;
       justify-content: center;
       gap: 3rem;
-      margin-bottom: 3.2rem;
+
+      @include first {
+        margin: 0 5rem 3.2rem;
+      }
+
+      @include nd-loca {
+        flex-direction: column-reverse;
+        margin-bottom: 12rem;
+      }
+
+      .map {
+        border-radius: 15px;
+
+        @include nd-loca {
+          display: none;
+        }
+
+      }
   
       .address-map {
         width: 100%;
         background: url("../../locations/src/img/location_background.png");
         border-radius: 15px;
-  
         padding: 8.8rem 0 0 9.5rem;
+
+        @include st-loca {
+          padding: 8.8rem 0 0 5.5rem
+        }
+
+        @include nd-loca {
+          height: 34.2rem;
+          background: url("/locations/src/img/bg-mid.png");
+          background-size: cover;
+        }
+
+        @include tablet {
+          height: 32.6rem;
+          background: url("/locations/src/img/bg-mid.png");
+        }
+
+        
   
         .address-country {
           @include loca-title;
@@ -59,4 +96,21 @@
   
   .article-map:nth-child(2) {
     flex-direction: row-reverse;
+
+    @include nd-loca {
+      flex-direction: column-reverse;
+    }
+  }
+
+
+  /* */
+
+  .map-mid {
+    display: none;
+
+    @include nd-loca {
+      display: block;
+/*       height: 32.6rem; */
+      width: 100%;
+    }
   }
