@@ -83,21 +83,22 @@
         top: 79.5rem;
         border-radius: 15px;
  
-        @include st-about {
-        width: 100rem;
+         @include st-about {
+         width: 100rem;
         }
  
         @include nd-about {
-        height: 72.7rem;
+         height: 72.7rem;
         }
  
-        @include rd-about { 
+         @include rd-about {
+ 
          width: 90rem;
          height: 48.5rem;
         }
  
-        @include fourth-about {
-        height: 48.5rem;
+         @include fourth-about {
+         height: 48.5rem;
         }
 
         @include tablet {
@@ -112,7 +113,6 @@
             @include rd-about {
                 width: 36rem;
             }
-
         }
 
         .landpage__about__tittle__two{

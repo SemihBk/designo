@@ -1,147 +1,147 @@
 /* GLOBAL */
 
 @mixin button-style-white {
-    width: 15.2rem;
-    height: 5.6rem;
-    background: $white;
-    border-radius: 8px;
-    border: none;
-    font-weight: 500;
-    font-size: 1.5rem;
-    color: $dark-grey;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
-    &:hover {
-       background: $white-opacity;
-       color: $white;
-       cursor: pointer;
-    }
+  width: 15.2rem;
+  height: 5.6rem;
+  background: $white;
+  border-radius: 8px;
+  border: none;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: $dark-grey;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  &:hover {
+     background: $white-opacity;
+     color: $white;
+     cursor: pointer;
+  }
 }
 
 @mixin button-style-red {
-    width: 15.2rem;
-    height: 5.6rem;
-    background: $peach;
-    border-radius: 8px;
-    border: none;
-    font-weight: 500;
-    font-size: 1.5rem;
-    color: $white;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
-    &:hover {
-       background: $peach-opacity;
-       color: $white;
-       cursor: pointer;
-    }
+  width: 15.2rem;
+  height: 5.6rem;
+  background: $peach;
+  border-radius: 8px;
+  border: none;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: $white;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  &:hover {
+     background: $peach-opacity;
+     color: $white;
+     cursor: pointer;
+  }
 
 }
 
 /* INPUT FORM -> contact.html */
 
 @mixin input-style {
-    background: transparent;
-    border: none;
-    width: 39rem;
-    height: 5rem;
-    outline: none;
-    color: $white;
+  background: transparent;
+  border: none;
+  width: 39rem;
+  height: 5rem;
+  outline: none;
+  color: $white;
 
-    @include st-loca {
-      width: 30rem;
-    }
+  @include st-loca {
+    width: 30rem;
+  }
 
-    @include st-cont {
-      width: 58rem;
-    }
+  @include st-cont {
+    width: 58rem;
+  }
 
-    @include nd-cont {
-      max-width: 100%;
-    }
+  @include nd-cont {
+    max-width: 100%;
+  }
 
-    &::placeholder {
-        color: $white-opacity;
-    }
+  &::placeholder {
+      color: $white-opacity;
+  }
 
-    &:focus::-webkit-input-placeholder { 
-      color: rgb(255, 255, 255); 
-    }
+  &:focus::-webkit-input-placeholder { 
+    color: rgb(255, 255, 255); 
+  }
 
 
-    &:placeholder-shown {
-        border-bottom: 1px solid $white;
-    }
+  &:placeholder-shown {
+      border-bottom: 1px solid $white;
+  }
 
-    &:placeholder-shown:focus {
-        border-bottom: 3px solid $white;
-    }
+  &:placeholder-shown:focus {
+      border-bottom: 3px solid $white;
+  }
 
-    &:not(:placeholder-shown) {
-        border-bottom: 2px solid $white;
-    }
+  &:not(:placeholder-shown) {
+      border-bottom: 2px solid $white;
+  }
 }
 
 /* LOCATIONS */
 
 @mixin head1 {
-    font-size: 4.8rem;
-    font-weight: 500;
-    line-height: 4.8rem;
-  }
-  
-  @mixin head2 {
-    font-size: 4rem;
-    font-weight: 500;
-    line-height: 4.8rem;
-    letter-spacing: 2px;
-  }
-  
-  @mixin head3 {
-    font-size: 2rem;
-    line-height: 2.6rem;
-    letter-spacing: 5px;
-  }
-  
-  @mixin body {
-    font-size: 1.6rem;
-    line-height: 2.6rem;
-  }
+  font-size: 4.8rem;
+  font-weight: 500;
+  line-height: 4.8rem;
+}
 
-  @mixin headgallery {
-    font-size: 4rem;
-    font-weight: 500;
-    line-height: 4rem;
-    letter-spacing: 2px;
-    color: $white;
-    text-align: center;
-    text-transform: uppercase;
-  }
-  
-  @mixin textgallery {
-    font-size: 1.5rem;
-    font-weight: 500;
-    line-height: 2.168rem;
-    letter-spacing: 2px;
-    color: $white;
-    text-align: center;
-    text-transform: uppercase;
-  }
-  
-  /* PAGE LOCATION */
-  
-  @mixin loca-title {
-    font-size: 4rem;
-    font-weight: 500;
-    color: #e7816b;
-    line-height: 48px;
-  }
-  
-  @mixin loca-text {
-    font-size: 1.6rem;
-    line-height: 26px;
-    color: #333136;
-  }
-  
+@mixin head2 {
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 4.8rem;
+  letter-spacing: 2px;
+}
+
+@mixin head3 {
+  font-size: 2rem;
+  line-height: 2.6rem;
+  letter-spacing: 5px;
+}
+
+@mixin body {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+}
+
+@mixin headgallery {
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 4rem;
+  letter-spacing: 2px;
+  color: $white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@mixin textgallery {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2.168rem;
+  letter-spacing: 2px;
+  color: $white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* PAGE LOCATION */
+
+@mixin loca-title {
+  font-size: 4rem;
+  font-weight: 500;
+  color: #e7816b;
+  line-height: 48px;
+}
+
+@mixin loca-text {
+  font-size: 1.6rem;
+  line-height: 26px;
+  color: #333136;
+}
+
 
 /*****************/
 /* MEDIA QUERIES */
@@ -149,45 +149,45 @@
 
 
 @mixin first {
-  @media screen and (max-width: #{$first-breakpoint}) {
-    @content;
-  }
+@media screen and (max-width: #{$first-breakpoint}) {
+  @content;
+}
 }
 
 @mixin second {
-  @media screen and (max-width: #{$second-breakpoint}) {
-    @content;
-  }
+@media screen and (max-width: #{$second-breakpoint}) {
+  @content;
+}
 }
 
 @mixin tablet {
-  @media screen and (max-width: #{$tablet-breakpoint}) {
-    @content;
-  }
+@media screen and (max-width: #{$tablet-breakpoint}) {
+  @content;
+}
 }
 
 @mixin fourth {
-  @media screen and (max-width: #{$nd-tablet-breakpoint}) {
-    @content;
-  }
+@media screen and (max-width: #{$nd-tablet-breakpoint}) {
+  @content;
+}
 }
 
 @mixin fifth {
-  @media screen and (max-width: #{$rd-tablet-breakpoint}) {
-    @content;
-  }
+@media screen and (max-width: #{$rd-tablet-breakpoint}) {
+  @content;
+}
 }
 
 @mixin sixth {
-  @media screen and (max-width: #{$fourth-tablet-breakpoint}) {
-    @content;
-  }
+@media screen and (max-width: #{$fourth-tablet-breakpoint}) {
+  @content;
+}
 }
 
 @mixin seventh {
-  @media screen and (max-width: #{$five-tablet-breakpoint}) {
-    @content;
-  }
+@media screen and (max-width: #{$five-tablet-breakpoint}) {
+  @content;
+}
 }
 
 /************************/
@@ -195,27 +195,27 @@
 /************************/
 
 @mixin st-about {
-  @media screen and (max-width: #{$st-brk-aboutUs}) {
-    @content;
-  }
+@media screen and (max-width: #{$st-brk-aboutUs}) {
+  @content;
+}
 }
 
 @mixin nd-about {
-  @media screen and (max-width: #{$nd-brk-aboutUs}) {
-    @content;
-  }
+@media screen and (max-width: #{$nd-brk-aboutUs}) {
+  @content;
+}
 }
 
 @mixin rd-about {
-  @media screen and (max-width: #{$rd-brk-aboutUs}) {
-    @content;
-  }
+@media screen and (max-width: #{$rd-brk-aboutUs}) {
+  @content;
+}
 }
 
 @mixin fourth-about {
-  @media screen and (max-width: #{$fourth-brk-aboutUs}) {
-    @content;
-  }
+@media screen and (max-width: #{$fourth-brk-aboutUs}) {
+  @content;
+}
 }
 
 /*************************/
@@ -224,33 +224,33 @@
 
 
 @mixin st-loca {
-  @media screen and (max-width: #{$st-brk-locations}) {
-    @content;
-  }
+@media screen and (max-width: #{$st-brk-locations}) {
+  @content;
+}
 }
 
 @mixin nd-loca {
-  @media screen and (max-width: #{$nd-brk-locations}) {
-    @content;
-  }
+@media screen and (max-width: #{$nd-brk-locations}) {
+  @content;
+}
 }
 
 @mixin rd-loca {
-  @media screen and (max-width: #{$rd-brk-locations}) {
-    @content;
-  }
+@media screen and (max-width: #{$rd-brk-locations}) {
+  @content;
+}
 }
 
 @mixin fourth-loca {
-  @media screen and (max-width: #{$fourth-brk-locations}) {
-    @content;
-  }
+@media screen and (max-width: #{$fourth-brk-locations}) {
+  @content;
+}
 }
 
 @mixin fifth-loca {
-  @media screen and (max-width: #{$fifth-brk-locations}) {
-    @content;
-  }
+@media screen and (max-width: #{$fifth-brk-locations}) {
+  @content;
+}
 }
 
 /***********************/
@@ -259,19 +259,19 @@
 
 
 @mixin st-cont {
-  @media screen and (max-width: #{$st-brk-contact}) {
-    @content;
-  }
+@media screen and (max-width: #{$st-brk-contact}) {
+  @content;
+}
 }
 
 @mixin nd-cont {
-  @media screen and (max-width: #{$nd-brk-contact}) {
-    @content;
-  }
+@media screen and (max-width: #{$nd-brk-contact}) {
+  @content;
+}
 }
 
 @mixin rd-cont {
-  @media screen and (max-width: #{$rd-brk-contact}) {
-    @content;
-  }
+@media screen and (max-width: #{$rd-brk-contact}) {
+  @content;
+}
 }

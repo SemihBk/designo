@@ -6,3 +6,9 @@
 @import "../../../src/scss/global/header";
 @import "section-about";
 @import "../../../src/scss/global/footer";
+
+body {
+    @include fourth-about {
+        font-size: 50%;
+    }
+}
