@@ -4,7 +4,7 @@
 
 A collaboration between **Semih**, **Miguel** and **Julien** !!
 
-**[This is our web page]([https://semihbk.github.io/sunnyside-agency/](https://semihbk.github.io/designo/))**
+**[This is our web page]([[https://semihbk.github.io/sunnyside-agency/](https://semihbk.github.io/designo/)])**
 
 </br>
 </br>
